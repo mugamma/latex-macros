@@ -21,6 +21,15 @@
 
 % uncomment for commutative diagrams
 %\usetikzlibrary{cd}
+\usetikzlibrary{automata, positioning, arrows}
+
+\tikzset{
+%->,
+-stealth, 
+node distance=2cm,
+every state/.style={thick}, 
+initial text=$ $,
+}
 
 \theoremstyle{definition}
 \newtheorem{defn}{Definition}
@@ -108,6 +117,7 @@
 \newcommand{\A}{\mathcal{A}}
 \newcommand{\B}{\mathcal{B}}
 \newcommand{\C}{\mathbb{C}}
+\newcommand{\E}{\mathcal{E}}
 \newcommand{\F}{\mathcal{F}}
 \newcommand{\g}{\mathfrak{g}}
 \renewcommand{\L}{\mathcal{L}}
@@ -116,9 +126,12 @@
 \newcommand{\Q}{\mathbb{Q}}
 \newcommand{\R}{\mathbb{R}}
 
+%% 6.5400 macros
+\newcommand{\st}[1]{\mbox{\texttt{#1}}}
+
 \newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
 
-\title{Title}
+\title{6.5400: Homework 1 Solutions}
 \author{Matin Ghavamizadeh}
 \date{}
 
